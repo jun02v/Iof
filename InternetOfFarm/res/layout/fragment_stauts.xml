@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.digitalsis.internetoffarm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <!-- <com.digitalsis.internetoffarm.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        app:scale_base_width="400"
+        app:scale_base_height="200" > -->
+	    <RelativeLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:gravity="center" >
+	        <!-- app:scale_left="0"
+            app:scale_top="0"
+	        app:scale_width="400"
+	        app:scale_height="200" > -->
+	        <LinearLayout 
+	            android:id="@+id/temperature_layout"
+	            android:layout_width="120dp"
+	        	android:layout_height="wrap_content"
+	        	android:layout_margin="10dp"
+	        	android:orientation="vertical" >
+		        <TextView
+		            android:id="@+id/temperature_title"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_horizontal"
+		            android:text="@string/temperature"
+		            android:textColor="#FF555555"
+		            android:textStyle="bold" 
+		            android:textSize="20dp" />
+		        <ImageView 
+		            android:id="@+id/temparature_img"
+		            android:layout_width="50dp"
+		            android:layout_height="86dp"
+		            android:layout_gravity="center_horizontal"
+		            android:src="@drawable/temperature" />
+		        <TextView 
+		            android:id="@+id/temperature_text"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_horizontal"
+		            android:textSize="30dp"
+		            android:text="23.27c" />
+	    	</LinearLayout>
+	    	<LinearLayout 
+	            android:id="@+id/humidity_layout"
+	            android:layout_width="120dp"
+	        	android:layout_height="wrap_content"
+	        	android:layout_margin="10dp"
+	        	android:orientation="vertical" 
+	        	android:layout_toRightOf="@id/temperature_layout">
+
+		        <TextView
+		            android:id="@+id/humidity_title"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_horizontal"
+		            android:text="@string/humidity"
+		            android:textColor="#FF555555"
+		            android:textSize="20dp"
+		            android:textStyle="bold" />
+
+		        <ImageView 
+		            android:id="@+id/humidity_img"
+		            android:layout_width="50dp"
+		            android:layout_height="86dp"
+		            android:layout_gravity="center_horizontal"
+		            android:src="@drawable/humidity"/>
+		        <TextView 
+		            android:id="@+id/humidity_text"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_horizontal"
+		            android:textSize="30dp"
+		            android:text="68.18%"/>		
+	    	</LinearLayout>
+	    	<LinearLayout 
+	            android:id="@+id/ppfd_layout"
+	            android:layout_width="120dp"
+	        	android:layout_height="wrap_content"
+	        	android:layout_margin="10dp"
+	        	android:orientation="vertical" 
+	        	android:layout_below="@id/temperature_layout" >
+		        <TextView
+		            android:id="@+id/ppfd_title"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_horizontal"
+		            android:text="@string/ppfd"
+		            android:textColor="#FF555555"
+		            android:textStyle="bold" 
+		            android:textSize="20dp" />
+		        <ImageView 
+		            android:id="@+id/ppfd_img"
+		            android:layout_width="86dp"
+		            android:layout_height="86dp"
+		            android:layout_gravity="center_horizontal"
+		            android:src="@drawable/ppfd" />
+		        <TextView 
+		            android:id="@+id/temperature_text"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_horizontal"
+		            android:textSize="30dp"
+		            android:text="NaN" />
+	    	</LinearLayout>
+
+	    	<LinearLayout
+	    	    android:id="@+id/co2_layout"
+	    	    android:layout_width="120dp"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_margin="10dp"
+	    	    android:layout_toRightOf="@id/ppfd_layout"
+	    	    android:layout_below="@id/humidity_layout"
+	    	    android:orientation="vertical" >
+
+		        <TextView
+		            android:id="@+id/co2_title"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_horizontal"
+		            android:text="@string/co2"
+		            android:textColor="#FF555555"
+		            android:textSize="20dp"
+		            android:textStyle="bold" />
+		        <ImageView 
+		            android:id="@+id/co2_img"
+		            android:layout_width="86dp"
+		            android:layout_height="86dp"
+		            android:layout_gravity="center_horizontal"
+		            android:src="@drawable/co2"/>
+		        <TextView 
+		            android:id="@+id/co2_text"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_horizontal"
+		            android:textSize="30dp"
+		            android:text="460ppm"/>		
+	    	</LinearLayout>
+	    </RelativeLayout>
+	<!-- </com.digitalsis.internetoffarm.ScalableLayout> -->
+</LinearLayout>

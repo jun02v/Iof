@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="100dp"
+        android:alignmentMode="alignBounds"
+        android:useDefaultMargins="true"
+        android:layout_weight="1"
+        android:columnCount="3" >
+        
+        <TextView
+            android:gravity="left"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/led"
+            android:textSize="20dp" />
+        <Switch 
+            android:id="@+id/led_switch"            
+            android:textOn="@string/auto"
+            android:textOff="@string/manual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_gravity="fill_horizontal" />
+        
+        <TextView
+            android:gravity="left"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/fan" 
+            android:textSize="20dp" />
+        <Switch 
+            android:id="@+id/fan_switch"
+            android:textOn="@string/auto"
+            android:textOff="@string/manual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Switch
+            android:id="@+id/fan_manual_switch"
+            android:layout_gravity="fill_horizontal"
+            android:layout_width="85dp"
+            android:textSize="50dp"
+            android:thumbTextPadding="25dp"
+            android:switchPadding="50dp"
+            android:switchMinWidth="60dp"
+            android:textOn="@string/on"
+            android:textOff="@string/off" />
+        
+        <TextView
+            android:gravity="left"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/blind1" 
+            android:textSize="20dp" />
+        <Switch 
+            android:id="@+id/blind1_switch"
+            android:textOn="@string/auto"
+            android:textOff="@string/manual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout 
+            android:layout_gravity="fill_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+	        <Button
+	            android:id="@+id/blind1_up_button"
+	            android:layout_height="30dp"
+	            android:layout_width="match_parent"
+	            android:layout_weight="1"
+	            android:layout_gravity="center"
+	            android:text="@string/up" />
+	        <Button
+	            android:id="@+id/blind1_down_button"
+	            android:layout_height="30dp"
+	            android:layout_width="match_parent"
+	            android:layout_weight="1"
+	            android:layout_gravity="center"
+				android:text="@string/down" />
+        </LinearLayout>
+        
+        <TextView
+            android:gravity="left"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/blind2" 
+            android:textSize="20dp" />
+        <Switch 
+            android:id="@+id/blind2_switch"
+            android:textOn="@string/auto"
+            android:textOff="@string/manual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout 
+            android:layout_gravity="fill_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+	        <Button
+	            android:id="@+id/blind2_up_button"
+	            android:layout_height="30dp"
+	            android:layout_width="match_parent"
+	            android:layout_weight="1"
+	            android:layout_gravity="center"
+	            android:text="@string/up" />
+	        <Button
+	            android:id="@+id/blind2_down_button"
+	            android:layout_height="30dp"
+	            android:layout_width="match_parent"
+	            android:layout_weight="1"
+	            android:layout_gravity="center"
+				android:text="@string/down" />
+	    </LinearLayout>
+	    
+        <TextView
+            android:gravity="left"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/boiler" 
+            android:textSize="20dp" />
+        <Switch 
+            android:id="@+id/boiler_switch"
+            android:textOn="@string/auto"
+            android:textOff="@string/manual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Switch
+            android:id="@+id/boiler_manual_switch"
+            android:layout_gravity="fill_horizontal"
+            android:layout_width="85dp"
+            android:thumbTextPadding="25dp"
+            android:switchMinWidth="60dp"
+            android:textOn="@string/on"
+            android:textOff="@string/off" />
+        
+        <TextView
+            android:gravity="left"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/watering" 
+            android:textSize="20dp" />
+        <Switch 
+            android:id="@+id/watering_switch"
+            android:textOn="@string/auto"
+            android:textOff="@string/manual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Switch
+            android:id="@+id/watering_manual_switch"
+            android:layout_gravity="fill_horizontal"
+            android:layout_width="85dp"
+            android:thumbTextPadding="25dp"
+            android:switchMinWidth="60dp"
+            android:textOn="@string/on"
+            android:textOff="@string/off" />
+                
+    </GridLayout>
+</LinearLayout>

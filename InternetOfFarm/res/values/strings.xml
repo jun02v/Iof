@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="app_name">Internet of Farm</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="menu_title">
+        <item>상태</item>
+        <item>제어</item>
+        <item>통계</item>
+    </string-array>
+    <string name="status">상태</string>
+    <string name="control">제어</string>
+    <string name="graph">통계</string>
+    <!-- 상태 탭 -->
+    <string name="humidity">습도</string>
+    <string name="temperature">온도</string>
+    <string name="ppfd">PPFD</string>
+    <string name="co2">CO2</string>
+    <!-- 제어 탭 -->
+    <string name="led">LED</string>
+    <string name="fan">환풍기</string>
+    <string name="led">LED</string>
+    <string name="blind1">차광막1</string>
+    <string name="blind2">차광막2</string>
+    <string name="boiler">난방</string>
+    <string name="watering">관수</string>
+    <string name="manual">수동</string>
+    <string name="auto">자동</string>
+    <string name="on">켜기</string>
+    <string name="off">끄기</string>
+    
+    <string name="up">UP</string>
+    <string name="down">DOWN</string>
+</resources>
